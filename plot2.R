@@ -21,5 +21,5 @@ library(lubridate)
 plot(x = subsetDate$Date, y = subsetDate$Global_active_power, xlab = "", ylab = "Global Active Power (kilowatts)", type = "l", xaxt = "n")
 axis.POSIXct(1, at = seq(subsetDate$Date[1], subsetDate$Date[length(subsetDate$Date)], by = "day"), format = "%a")
 
-dev.copy(png, file = "plo2.png")
+dev.copy(png, file = "plo2.png",width=480, height=480)
 dev.off()

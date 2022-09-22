@@ -25,5 +25,5 @@ lines(x = subsetDate$Date, y = subsetDate$Sub_metering_3, col = "blue")
 legend("topright", col = c("black", "red", "blue"), legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), lty=1, cex=0.8)
 
 
-dev.copy(png, file = "plo3.png")
+dev.copy(png, file = "plo3.png", width=480, height=480)
 dev.off()

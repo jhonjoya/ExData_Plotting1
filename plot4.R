@@ -43,5 +43,5 @@ with(subsetDate,{
 })
 
 ## Create a PNG copy
-dev.copy(png, file = "plo4.png")
+dev.copy(png, file = "plo4.png", width=480, height=480)
 dev.off()

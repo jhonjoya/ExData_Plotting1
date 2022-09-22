@@ -16,5 +16,5 @@ date2 <- strptime("2007-02-02", "%Y-%m-%d")
 subsetDate <- householdPowerConsumption[householdPowerConsumption$Date >= date1 & householdPowerConsumption$Date <= date2,]
 
 hist(subsetDate$Global_active_power, xlab = "Global Active Power (kilowatts)", col = "red", main = "Global Active Power")
-dev.copy(png, file = "plo1.png")
+dev.copy(png, file = "plo1.png", width=480, height=480)
 dev.off()
